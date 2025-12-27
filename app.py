@@ -1,3 +1,8 @@
+import os
+os.environ["OPENCV_VIDEOIO_PRIORITY_MSMF"] = "0"
+os.environ["QT_QPA_PLATFORM"] = "offscreen"
+os.environ["ULTRALYTICS_NO_CV2"] = "1"
+
 import streamlit as st
 import numpy as np
 from PIL import Image
@@ -5,7 +10,7 @@ from ultralytics import YOLO
 from pathlib import Path
 import time
 import os
-os.environ["ULTRALYTICS_NO_CV2"] = "1"
+
 
 
 
