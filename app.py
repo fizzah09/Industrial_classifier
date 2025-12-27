@@ -4,6 +4,9 @@ from PIL import Image
 from ultralytics import YOLO
 from pathlib import Path
 import time
+import os
+os.environ["ULTRALYTICS_NO_CV2"] = "1"
+
 
 
 st.set_page_config(
